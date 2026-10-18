@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG ADVENTURE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">Joka Travel</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a class="ctn"href="#">Contact</a></li>
+        </ul>
+        <img src="./image/menu.jpg" alt="" class="menu-btn">
+    </nav>
+
+
+    <header>
+        <div class="header-content">
+            <h2>Explore The Bueaty of Papua New Guinea</h2>
+            <div class="line"></div>
+            <h1>ADVENTURE</h1>
+            <a href="#" class="ctn">Learn More</a>
+
+        </div>
+    </header>
+
+    <!-- == Events == -->
+     <section class="Events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./image/img3.jpg" alt="">
+                <h4>Kokoda Track and Trail</h4>
+                <p>Track and trail to Kokoda Camp. Tourist assisted by the people of ORO Province. Walking all and adventure to final destination.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/img4.jpg" alt="">
+                <h4>Holidays Trip</h4>
+                <p>Spending holidays with family and friends at Pangpang Island, enjoying the sea breeze and the nature of the ocean.</p>
+                <a href="#" class="ctn">Learn More</a>
+        </div>
+     </section>
+
+     <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORING PNG</h1>
+            <div class="line"></div>
+            <P>Exploring Papua New Guinea with their cultural Heritage</P>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+     </section>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+
+        })
+    </script>
+</body>
+</html>
